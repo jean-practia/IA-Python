@@ -8,6 +8,8 @@ def pesquisa():
             print(j) 
     except ImportError:  
         print("No module named 'google' found")
-
+        print("Houve erro na pesquisa")
+    except Exception as e:
+        print(e)
     finally:
         print("Busca finalizada!")
